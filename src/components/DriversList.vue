@@ -16,6 +16,14 @@ const storage = Storage();
                     <th>Last Name</th>
                     <th>Short Name</th>
                     <th>Player ID</th>
+                    <th>nationality</th>
+                    <th>driverCategory</th>
+                    <th>defaultGridPosition</th>
+                    <th>forcedCarModel</th>
+                    <th>overrideDriverInfo</th>
+                    <th>isServerAdmin</th>
+                    <th>overrideCarModelForCustomCar</th>
+                    <th>configVersion</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,8 +33,18 @@ const storage = Storage();
                     <td>{{entry.drivers[0].lastName}}</td>
                     <td>{{entry.drivers[0].shortName}}</td>
                     <td>{{entry.drivers[0].playerID}}</td>
+                    <td>{{entry.drivers[0].nationality}}</td>
+                    <td>{{entry.drivers[0].driverCategory}}</td>
+
+                    <td>{{entry.raceNumber}}</td>
+                    <td>{{entry.defaultGridPosition}}</td>
+                    <td>{{entry.forcedCarModel}}</td>
+                    <td>{{entry.overrideDriverInfo}}</td>
+                    <td>{{entry.isServerAdmin}}</td>
+                    <td>{{entry.overrideCarModelForCustomCar}}</td>
+                    <td>{{entry.configVersion}}</td>
                 </tr>
-                
+
             </tbody>
         </table>
     </div>    
