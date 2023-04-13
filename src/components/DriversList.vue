@@ -18,6 +18,7 @@ const storage = Storage();
                     <th>Player ID</th>
                     <th>nationality</th>
                     <th>driverCategory</th>
+                    <th>raceNumber</th>
                     <th>defaultGridPosition</th>
                     <th>forcedCarModel</th>
                     <th>overrideDriverInfo</th>
@@ -35,7 +36,6 @@ const storage = Storage();
                     <td>{{entry.drivers[0].playerID}}</td>
                     <td>{{entry.drivers[0].nationality}}</td>
                     <td>{{entry.drivers[0].driverCategory}}</td>
-
                     <td>{{entry.raceNumber}}</td>
                     <td>{{entry.defaultGridPosition}}</td>
                     <td>{{entry.forcedCarModel}}</td>
