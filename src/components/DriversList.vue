@@ -1,0 +1,39 @@
+<script setup>
+import { Storage } from '../storage/storage'
+
+const storage = Storage();
+
+</script>
+
+<template>
+    <div class="container">
+        <h3 class="p-3 text-center">Lista de Pilotos</h3>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Remover</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Short Name</th>
+                    <th>Player ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="entry in storage.getDrivers.entries" :key="entry">
+                    <td><button type="button" class="btn btn-danger btn-sm" @click="storage.removeDriver(entry)">Remover</button></td>
+                    <td>{{entry.drivers[0].firstName}}</td>
+                    <td>{{entry.drivers[0].lastName}}</td>
+                    <td>{{entry.drivers[0].shortName}}</td>
+                    <td>{{entry.drivers[0].playerID}}</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>    
+</template>
+
+<style>
+.table {
+    color: white;
+}
+</style>
